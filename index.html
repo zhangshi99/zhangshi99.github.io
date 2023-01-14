@@ -71,6 +71,49 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-url解码" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/01/14/url%E8%A7%A3%E7%A0%81/" class="article-date">
+  <time class="dt-published" datetime="2023-01-14T11:37:49.000Z" itemprop="datePublished">2023-01-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/01/14/url%E8%A7%A3%E7%A0%81/">url解码</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>​    这是buuctf上的一道url解码题，非常简单的一道题。</p>
+<p>  首先，打开看<img src="C:\Users\ht\Pictures\Screenshots\微信图片_20230114193608.png" alt="微信图片_20230114193608"></p>
+<p>这里给了一个文件，我们打开文件，看见文件里面是  %66%6c%61%67%7b%61%6e%64%20%31%3d%31%7d</p>
+<p>这是文件内容，根据靶机的提示信息是url解码，所以，我们直接搜索url在线解码工具输入，并且解码，得到flag{and 1&#x3D;1}</p>
+<p><img src="C:\Users\ht\Pictures\Screenshots\微信图片_20230114193619.png" alt="微信图片_20230114193619"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/01/14/url%E8%A7%A3%E7%A0%81/" data-id="clcvvtg4e00002wupbmku0dv9" data-title="url解码" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-密码学在线编译器" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/01/12/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91%E5%99%A8/" class="article-date">
@@ -93,63 +136,16 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>1.摩斯密码<br>特征：点和横线的组合<br>例如：-… -.- -.-. - ..-. – .. … -.-<br>在线工具 <a target="_blank" rel="noopener" href="http://www.zhongguosou.com/zonghe/moErSiCodeConverter.aspx">http://www.zhongguosou.com/zonghe/moErSiCodeConverter.aspx</a><br>2.栅栏密码<br>特征：大小写和字符（其实就是分组替换加密）<br>例如：Th eg ir li sb ea ut if ul<br>在线工具 <a target="_blank" rel="noopener" href="http://tool.bugku.com/jiemi/">http://tool.bugku.com/jiemi/</a><br>3.类栅栏密码<br>特征：一串乱序的从1到n的数，遗传乱序的密文<br>破解对照下表：<br>2	1	6	5	3	4<br>l	f	5	{	a	g<br>0	2	4	c	4	8<br>3	5	4	9	d	7<br>f	d	@	@	1	}<br>4.Ook密码<br>特征：由Ook加.?!标点组成或者·1只有标点<br>例如：Ook. Ook? Ook!<br>在线工具 <a target="_blank" rel="noopener" href="https://ctf.bugku.com/tool/brainfuck">https://ctf.bugku.com/tool/brainfuck</a><br>5.brainfuck密码<br>特征：+ - {} [] . &lt;&gt;这些符号构成的密码<br>例如：+++++ +++++ [-&gt;++ +++++ +++&lt;] &gt;++.+ +++++ .&lt;+++ [-&gt;– -&lt;]&gt;<br>在线工具 <a target="_blank" rel="noopener" href="https://ctf.bugku.com/tool/brainfuck">https://ctf.bugku.com/tool/brainfuck</a><br>6.音符密码<br>特征：由一串音乐符号组成<br>例如：♬♩¶♯♬♭♬♫♫♪‖♪‖♯‖♭‖♭‖§‖♭‖∮♫♫♯&#x3D;<br>在线工具：<a target="_blank" rel="noopener" href="https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=yinyue">https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=yinyue</a><br>7.元音密码<br>特征：一串数字。但是每一个数字对应一个字母<br>解密对照表：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/d04dba102696">https://www.jianshu.com/p/d04dba102696</a><br>8.base64密码<br>特征： 由A-Z，a-z，0-9，+&#x2F; 这64各字符构成，最后通常有个&#x3D;&#x3D;<br>例如：NjY2NjY2Ng&#x3D;&#x3D;<br>在线工具 <a target="_blank" rel="noopener" href="https://base64.us/">https://base64.us/</a><br>9.凯撒密码<br>特征：明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文<br>例如：偏移量为10：Avocat(A→K)<br>在线工具：<a target="_blank" rel="noopener" href="https://www.qqxiuzi.cn/bianma/kaisamima.php">https://www.qqxiuzi.cn/bianma/kaisamima.php</a><br>10. 键盘格子密码<br>特征：由三到四个英文字母或数字为一组。<br>e.g.<br>r5yG lp9I BjM tFhBT6uh y7iJ QsZ bhM<br>解密：在键盘上找到·对应的键位即可<br>11. 核心价值观编码<br>特征：富强民主文明和谐自由平等公正法治爱国敬业诚信友善<br>在线工具：<a target="_blank" rel="noopener" href="http://ctf.ssleye.com/cvencode.html">http://ctf.ssleye.com/cvencode.html</a><br>e.g.<br>公正公正公正诚信文明公正民主公正法治法治友善平等和谐敬业和谐富强和谐富强和谐文明和谐平等公正公正和谐法治公正公正公正文明和谐民主和谐敬业和谐平等和谐敬业和谐敬业和谐和谐和谐公正法治友善法治</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/01/12/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91%E5%99%A8/" data-id="clcssgmu80001cgup0p5p29dh" data-title="密码学在线编译器" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/01/04/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-01-04T03:24:25.271Z" itemprop="datePublished">2023-01-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+        <p>1.摩斯密码<br>特征：点和横线的组合
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/01/04/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+          <p class="article-more-link">
+            <a href="/2023/01/12/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91%E5%99%A8/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/01/04/hello-world/" data-id="clcssgmu50000cgup4s57dwem" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/01/12/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91%E5%99%A8/" data-id="clcvvtg4i00012wup9bo357uj" data-title="密码学在线编译器" class="article-share-link">Share</a>
       
       
       
@@ -192,11 +188,11 @@
       <ul>
         
           <li>
-            <a href="/2023/01/12/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91%E5%99%A8/">密码学在线编译器</a>
+            <a href="/2023/01/14/url%E8%A7%A3%E7%A0%81/">url解码</a>
           </li>
         
           <li>
-            <a href="/2023/01/04/hello-world/">Hello World</a>
+            <a href="/2023/01/12/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91%E5%99%A8/">密码学在线编译器</a>
           </li>
         
       </ul>
