@@ -4,23 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>buuctf crypto 解题 | Hexo</title>
+  <title>buuctf crypto解题2 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="​    今天，继续解决关于密码学的简单的题，首先，我们还是启动靶机 然后，打开文件 根据题目的提醒，这是，凯撒密码，但是有点不同，对照Asll密码表，发现规律可以用·python3脚本· 然后执行命令，最后得出flag{Caesar_variation}">
+  <meta name="description" content="首先，打开靶机， 看见flag：ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30&#x3D;   看见这串字符，我们可以直接想到base64编码，最后有一个等号，所以，我们直接打开解码网站，然后输入解码 最后得到flag{THE_FLAG_OF_THIS_STRING}">
 <meta property="og:type" content="article">
-<meta property="og:title" content="buuctf crypto 解题">
-<meta property="og:url" content="http://example.com/2023/01/21/buuctf-crypto-%E8%A7%A3%E9%A2%98/index.html">
+<meta property="og:title" content="buuctf crypto解题2">
+<meta property="og:url" content="http://example.com/2023/01/21/buuctf-crypto%E8%A7%A3%E9%A2%982/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="​    今天，继续解决关于密码学的简单的题，首先，我们还是启动靶机 然后，打开文件 根据题目的提醒，这是，凯撒密码，但是有点不同，对照Asll密码表，发现规律可以用·python3脚本· 然后执行命令，最后得出flag{Caesar_variation}">
+<meta property="og:description" content="首先，打开靶机， 看见flag：ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30&#x3D;   看见这串字符，我们可以直接想到base64编码，最后有一个等号，所以，我们直接打开解码网站，然后输入解码 最后得到flag{THE_FLAG_OF_THIS_STRING}">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121133026.png">
-<meta property="og:image" content="http://example.com/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121133450.png">
-<meta property="og:image" content="http://example.com/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121133456.png">
-<meta property="article:published_time" content="2023-01-21T05:24:14.000Z">
-<meta property="article:modified_time" content="2023-01-21T05:40:49.184Z">
+<meta property="og:image" content="http://example.com/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121134614.png">
+<meta property="og:image" content="http://example.com/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121134617.png">
+<meta property="article:published_time" content="2023-01-21T05:45:09.000Z">
+<meta property="article:modified_time" content="2023-01-21T05:48:36.706Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121133026.png">
+<meta name="twitter:image" content="http://example.com/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121134614.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -77,10 +76,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-buuctf-crypto-解题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-buuctf-crypto解题2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/01/21/buuctf-crypto-%E8%A7%A3%E9%A2%98/" class="article-date">
-  <time class="dt-published" datetime="2023-01-21T05:24:14.000Z" itemprop="datePublished">2023-01-21</time>
+    <a href="/2023/01/21/buuctf-crypto%E8%A7%A3%E9%A2%982/" class="article-date">
+  <time class="dt-published" datetime="2023-01-21T05:45:09.000Z" itemprop="datePublished">2023-01-21</time>
 </a>
     
   </div>
@@ -91,7 +90,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      buuctf crypto 解题
+      buuctf crypto解题2
     </h1>
   
 
@@ -99,15 +98,14 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>​    今天，继续解决关于密码学的简单的题，首先，我们还是启动靶机<img src="/../imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121133026.png"></p>
-<p>然后，打开文件<img src="/../imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121133450.png"></p>
-<p>根据题目的提醒，这是，凯撒密码，但是有点不同，对照Asll密码表，发现规律可以用·python3脚本·<img src="/../imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121133456.png"></p>
-<p>然后执行命令，最后得出flag{Caesar_variation}</p>
+        <p>   首先，打开靶机，<img src="/../imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121134614.png"></p>
+<p>看见flag：ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30&#x3D;   看见这串字符，我们可以直接想到base64编码，最后有一个等号，所以，我们直接打开解码网站，然后输入解码<img src="/../imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121134617.png"></p>
+<p>最后得到flag{THE_FLAG_OF_THIS_STRING}</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/01/21/buuctf-crypto-%E8%A7%A3%E9%A2%98/" data-id="cld5j5tgc000278updszy86hm" data-title="buuctf crypto 解题" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/01/21/buuctf-crypto%E8%A7%A3%E9%A2%982/" data-id="cld5j5tg7000078up8kec5mxh" data-title="buuctf crypto解题2" class="article-share-link">Share</a>
       
       
       
@@ -117,19 +115,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2023/01/21/buuctf-crypto%E8%A7%A3%E9%A2%982/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          buuctf crypto解题2
-        
-      </div>
-    </a>
   
-  
-    <a href="/2023/01/15/buuctf%E8%A7%A3%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/01/21/buuctf-crypto-%E8%A7%A3%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">buuctf解题</div>
+      <div class="article-nav-title">buuctf crypto 解题</div>
     </a>
   
 </nav>
