@@ -4,22 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>buuctf crypto解题2 | Hexo</title>
+  <title>buuctf basic 1 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="首先，打开靶机， 看见flag：ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30&#x3D;   看见这串字符，我们可以直接想到base64编码，最后有一个等号，所以，我们直接打开解码网站，然后输入解码 最后得到flag{THE_FLAG_OF_THIS_STRING}">
+  <meta name="description" content="​     这次，来看一下basic的题目，首先启动靶机 给了一个网站，点击进去 看到这，include $_GET[‘file’];又有这串代码，可以看出，这是·文件包含的题，直接输http:&#x2F;&#x2F;c92af9fd-c8db-4466-afc9-b74fc0e8dc83.node4.buuoj.cn:81&#x2F;？file&#x3D;&#x2F;flag即可得出答案![](..&#x2F;imgs&#x2F;%E5%BE%AE%E4%BF%A">
 <meta property="og:type" content="article">
-<meta property="og:title" content="buuctf crypto解题2">
-<meta property="og:url" content="http://example.com/2023/01/21/buuctf-crypto%E8%A7%A3%E9%A2%982/index.html">
+<meta property="og:title" content="buuctf basic 1">
+<meta property="og:url" content="http://example.com/2023/01/29/buuctf-basic-1/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="首先，打开靶机， 看见flag：ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30&#x3D;   看见这串字符，我们可以直接想到base64编码，最后有一个等号，所以，我们直接打开解码网站，然后输入解码 最后得到flag{THE_FLAG_OF_THIS_STRING}">
+<meta property="og:description" content="​     这次，来看一下basic的题目，首先启动靶机 给了一个网站，点击进去 看到这，include $_GET[‘file’];又有这串代码，可以看出，这是·文件包含的题，直接输http:&#x2F;&#x2F;c92af9fd-c8db-4466-afc9-b74fc0e8dc83.node4.buuoj.cn:81&#x2F;？file&#x3D;&#x2F;flag即可得出答案![](..&#x2F;imgs&#x2F;%E5%BE%AE%E4%BF%A">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121134614.png">
-<meta property="og:image" content="http://example.com/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121134617.png">
-<meta property="article:published_time" content="2023-01-21T05:45:09.000Z">
-<meta property="article:modified_time" content="2023-01-21T05:48:36.706Z">
+<meta property="og:image" content="http://example.com/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230129103922.png">
+<meta property="og:image" content="http://example.com/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230129104154.png">
+<meta property="article:published_time" content="2023-01-29T02:40:38.000Z">
+<meta property="article:modified_time" content="2023-01-29T02:44:42.344Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121134614.png">
+<meta name="twitter:image" content="http://example.com/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230129103922.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -76,10 +76,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-buuctf-crypto解题2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-buuctf-basic-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/01/21/buuctf-crypto%E8%A7%A3%E9%A2%982/" class="article-date">
-  <time class="dt-published" datetime="2023-01-21T05:45:09.000Z" itemprop="datePublished">2023-01-21</time>
+    <a href="/2023/01/29/buuctf-basic-1/" class="article-date">
+  <time class="dt-published" datetime="2023-01-29T02:40:38.000Z" itemprop="datePublished">2023-01-29</time>
 </a>
     
   </div>
@@ -90,7 +90,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      buuctf crypto解题2
+      buuctf basic 1
     </h1>
   
 
@@ -98,14 +98,15 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>   首先，打开靶机，<img src="/../imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121134614.png"></p>
-<p>看见flag：ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30&#x3D;   看见这串字符，我们可以直接想到base64编码，最后有一个等号，所以，我们直接打开解码网站，然后输入解码<img src="/../imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230121134617.png"></p>
-<p>最后得到flag{THE_FLAG_OF_THIS_STRING}</p>
+        <p>​     这次，来看一下basic的题目，首先启动靶机<img src="/../imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230129103922.png"></p>
+<p>给了一个网站，点击进去<img src="/../imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230129104154.png"></p>
+<p>看到这，include $_GET[‘file’];又有这串代码，可以看出，这是·文件包含的题，直接输<a target="_blank" rel="noopener" href="http://c92af9fd-c8db-4466-afc9-b74fc0e8dc83.node4.buuoj.cn:81/%EF%BC%9Ffile=/flag%E5%8D%B3%E5%8F%AF%E5%BE%97%E5%87%BA%E7%AD%94%E6%A1%88![](../imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230129103930.png)">http://c92af9fd-c8db-4466-afc9-b74fc0e8dc83.node4.buuoj.cn:81/？file=/flag即可得出答案![](../imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230129103930.png)</a></p>
+<p>得到flag{89598591-1af9-4b8d-9aa8-b1673bbafa8c}</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/01/21/buuctf-crypto%E8%A7%A3%E9%A2%982/" data-id="cldgs45mk0003rsupg8wx1ynv" data-title="buuctf crypto解题2" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/01/29/buuctf-basic-1/" data-id="cldgs45mk0002rsup56j0e0mg" data-title="buuctf basic 1" class="article-share-link">Share</a>
       
       
       
@@ -115,19 +116,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2023/01/21/buuctf-crypto%E8%A7%A3%E9%A2%983/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          buuctf crypto解题3
-        
-      </div>
-    </a>
   
-  
-    <a href="/2023/01/21/buuctf-crypto-%E8%A7%A3%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/01/29/buuctf-crypto-%E8%A7%A3%E9%A2%984/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">buuctf crypto 解题</div>
+      <div class="article-nav-title">buuctf crypto 解题4</div>
     </a>
   
 </nav>
